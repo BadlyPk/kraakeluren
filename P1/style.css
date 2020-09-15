@@ -1,4 +1,11 @@
 body {
   width: 60%;
   margin: auto;
+  background-color: #F6F6F6;
+}
+
+div {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
 }
