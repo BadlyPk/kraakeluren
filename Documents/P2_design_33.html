@@ -13,7 +13,7 @@
 	<body>
 		<div>
 			<h1>P2 Project Design</h1>
-			<h4>Group 33 - Adrian, Cathrine, Henning, Joakim, Martin</h4>
+			<h4>Group 33 - Adrian, Cathrine, Henning, Joakim, Martin<br>October 4th, 2020</h4>
 		</div>
 
 		<div>
@@ -118,15 +118,17 @@
 			<p> The requirement for Javascript applications will consist of the following:</p>
 			<ol>
 				<li>Image Carousel
-					<p> As discussed above, the gallery will have a slideshow at the top (see mockup above).</p></li>
+					<p> As discussed above, the gallery will have a slideshow at the top (see mockup above). It'll cycle through all photos from the library in random order, spending about 4-5 seconds on each before doing a "sliding" transition.</p></li>
 				<li>Image Transition
-					<p> The "about Kråkestyret" page will have an image transition effect for each board member: when you mouse over their picture, it'll fade into another one.</p></li>
+					<p> The "about Kråkestyret" page will have an image transition effect for each board member. When you mouse over their picture, it'll fade into another one, and fade back to the original when the mouse leaves the photo.</p></li>
 				<li>Interactive map
-					<p> The contact page will have a Mazemap widget, showing off their headquarters and regular "gathering spots".</p></li>
+					<p> The contact page will have a Google or Mazemap (ideally Mazemap, depends if there's an API we can use) widget (green tile in mockup). It'll show off their headquarters and their regular "gathering spots" (e.g. Realfagskjelleren, the details are up to the client here).</p></li>
 				<li>Interactive calendar
-					<p> On the activity calendar, you'll be able to click on various dates/events to see more info, etc.</p></li>
+					<p> On the activity calendar, you'll be able to click on events/days to see more info. This'll open a small popup with information such as time, location, description. Closed with a small "X" in the top-right corner.</p></li>
 				<li>Song lyrics
-					<p> On the song-list page, you can click on a song title to view its lyrics.</p></li>
+					<p> On the song-list page, you can click on a song title to view its lyrics (see mockup). The page itself only lists the songs, while clicking on them will open the full tab with the lyrics.</p></li>
+				<li>Persistent nav-bar
+					<p> As mentioned in page layout and appearance, the horizontal navigation bar will be persistantly available on-screen, but will "compress" to become thinner once the user scrolls a specific amount (of px) from the top, to take up less space. The logo and bar height will simply scale thanks to a javascript.</p></li>
 			</ol>
 		</div>
 
