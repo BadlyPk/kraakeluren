@@ -60,17 +60,26 @@ h1, h3 {
 
 #imgtext {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
+  bottom: 400px;
+  left: 300px;
+  color: gold;
+  font-style: italic;
+  font-size: 50px;
+  visibility: visible;
+}
+#expandedImg{
+  position: absolute;
+  right:250px;
+  bottom:-25px;
+  width: 30%;
+  height:75%;
 }
 
 .closebtn {
   position: absolute;
   top: 10px;
   right: 15px;
-  color: white;
+  color: black;
   font-size: 35px;
   cursor: pointer;
 }
