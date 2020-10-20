@@ -10,6 +10,7 @@ h1, h3 {
 
 .column {
   flex: 50%;
+  flex-direction: column;
 }
 
 .column_in {
@@ -23,7 +24,6 @@ h1, h3 {
   flex-direction: row;
 }
 
-
 .box {
   background-color: #f0f0f0;
   margin: 10px;
@@ -31,6 +31,10 @@ h1, h3 {
   padding: 10px;
   display: flex;
   flex-direction: row;
+}
+
+.column_in p{
+  margin: 0;
 }
 
 @media (max-width: 850px) {
