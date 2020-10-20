@@ -81,7 +81,7 @@ h1 {
   }
 }
 
-.column_in p{
+.column_in p:last-child{
   margin: 0;
 }
 
