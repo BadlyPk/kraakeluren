@@ -62,7 +62,6 @@ h1 {
 
 .row {
   display: flex;
-  margin: 10px;
   flex-direction: row;
 }
 
