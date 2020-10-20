@@ -77,6 +77,10 @@ h1 {
   }
 }
 
+.column_in p{
+  margin: 0;
+}
+
 .shopimg {
   width: 100%;
 }
