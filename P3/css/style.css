@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+}
+
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  background-color: #f0f0f0;
+}
+
+.row {
+  display: flex;
+}
