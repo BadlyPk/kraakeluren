@@ -27,8 +27,12 @@ h1 {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #f0f0f0;
-  padding: 20px;
+  background-color: rgba(192,192,192,0.7);
+}
+
+#abouttext {
+  padding-left: 20px;
+  color: white;
 }
 
 .overlay span {
