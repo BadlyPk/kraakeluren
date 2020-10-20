@@ -71,10 +71,6 @@ h1 {
   flex-direction: row;
 }
 
-.column_in p{
-  margin: 0;
-}
-
 @media (max-width: 850px) {
   .row {
     flex-direction: column;
