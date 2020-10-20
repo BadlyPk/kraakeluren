@@ -23,3 +23,7 @@ h1 {
   margin: 20px;
   display: flex;
 }
+
+.shopimg {
+  width: 100%;
+}
