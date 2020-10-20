@@ -3,6 +3,10 @@ h1, h3 {
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
+h1 {
+  font-size: 300%;
+}
+
 .container {
   margin: auto;
   width: 70%;
