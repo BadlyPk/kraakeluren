@@ -7,6 +7,21 @@ h1 {
   font-size: 300%;
 }
 
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.headimg:hover .overlay {
+  opacity: 1;
+}
+
 .container {
   margin: auto;
   width: 70%;
