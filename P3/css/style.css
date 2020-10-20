@@ -7,15 +7,33 @@ h1 {
   font-size: 300%;
 }
 
+.headimg {
+  position: relative;
+  width: 100%;
+}
+
+.aboutimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .overlay {
   position: absolute;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #f0f0f0;
+}
+
+.overlay span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .headimg:hover .overlay {
@@ -30,7 +48,6 @@ h1 {
 
 .column {
   flex: 50%;
-  flex-direction: column;
 }
 
 .column_in {
@@ -51,10 +68,6 @@ h1 {
   padding: 10px;
   display: flex;
   flex-direction: row;
-}
-
-.column_in p{
-  margin: 0;
 }
 
 @media (max-width: 850px) {
