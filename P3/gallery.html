@@ -49,6 +49,10 @@
 			var imgIndex = 1;
 			displayImg(imgIndex);
 
+			function currentImg(n) {
+				displayImg(imgIndex = n);
+			}
+
 			function changeImg(n) {
 				displayImg(imgIndex += n);
 			}
@@ -56,6 +60,7 @@
 			function displayImg(n) {
 
 				var images = document.getElementsByClassName("imgSlide");
+				var dots = document.getElementsByClassName("dot");
 
 				if (n > images.length) {
 					imgIndex = 1;
@@ -70,7 +75,12 @@
 						images[i].style.display = "none";
 				}
 
+				for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" currentDot", "");
+		  	}
+
 				images[imgIndex - 1].style.display = "block";
+				dots[imgIndex - 1].className += " currentDot";
 			}
 
 		</script>
