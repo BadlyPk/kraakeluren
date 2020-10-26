@@ -3,16 +3,77 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="keywords" content="Kråke, Kråkeluren, Spanskrøret, NTNU">
-		<title>P1</title>
+		<title>Galleri</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
 
+		<div class="carousel">
 
+			<div class="imgSlide">
+				<img class="imgSlideImg" src="img/red.jpg" style="width:100%">
+			</div>
+
+			<div class="imgSlide">
+				<img class="imgSlideImg" src="img/blue.jpg" style="width:100%">
+			</div>
+
+			<div class="imgSlide">
+				<img class="imgSlideImg" src="img/green.png" style="width:100%">
+			</div>
+
+			<a class="prevImg" onclick="changeImg(-1)"><p>&#10094;</p></a>
+			<a class="nextImg" onclick="changeImg(1)"><p>&#10095;</p></a>
+
+			<div class="dots">
+				<span class="dot" onclick="currentImg(1)"></span>
+				<span class="dot" onclick="currentImg(2)"></span>
+				<span class="dot" onclick="currentImg(3)"></span>
+			</div>
+
+		</div>
+
+		<div class="container">
+
+			<h1>Galleri</h1>
+
+		</div>
 
 		<footer>
 			<p id="footer" style="text-align:center">&copy; Gruppe 33 - 2020</p>
 		</footer>
+
+		<script type="text/javascript">
+
+			var imgIndex = 1;
+			displayImg(imgIndex);
+
+			function changeImg(n) {
+				displayImg(imgIndex += n);
+			}
+
+			function displayImg(n) {
+
+				var images = document.getElementsByClassName("imgSlide");
+
+				if (n > images.length) {
+					imgIndex = 1;
+				}
+
+				if (n < 1) {
+					imgIndex = images.length;
+				}
+
+				var i;
+				for (i = 0; i < images.length; i++) {
+						images[i].style.display = "none";
+				}
+
+				images[imgIndex - 1].style.display = "block";
+			}
+
+		</script>
+
 	</body>
 </html>
