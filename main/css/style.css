@@ -74,6 +74,48 @@ h1 {
   flex-direction: row;
 }
 
+
+
+
+.boxImgOnly {
+  background-color: #f0f0f0;
+  margin: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.imgOnly {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.boxOverImage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  transition: .6s ease;
+  background-color: rgba(240,240,240,0.7);
+}
+
+.boxOverImage span {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.boxImgOnly:hover .boxOverImage {
+  opacity: 1;
+}
+
+
+
+
 @media (max-width: 850px) {
   .row {
     flex-direction: column;
