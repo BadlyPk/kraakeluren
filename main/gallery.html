@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Kråke, Kråkeluren, Spanskrøret, NTNU">
+		<title>Galleri</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+		<div class="carousel">
+
+			<div class="imgSlide">
+				<img class="imgSlideImg" src="img/red.jpg" style="width:100%">
+			</div>
+
+			<div class="imgSlide">
+				<img class="imgSlideImg" src="img/blue.jpg" style="width:100%">
+			</div>
+
+			<div class="imgSlide">
+				<img class="imgSlideImg" src="img/green.png" style="width:100%">
+			</div>
+
+			<a class="prevImg" onclick="changeImg(-1)"><p>&#10094;</p></a>
+			<a class="nextImg" onclick="changeImg(1)"><p>&#10095;</p></a>
+
+			<div class="dots">
+				<span class="dot" onclick="currentImg(1)"></span>
+				<span class="dot" onclick="currentImg(2)"></span>
+				<span class="dot" onclick="currentImg(3)"></span>
+			</div>
+
+		</div>
+
+		<div class="container">
+
+			<h1>Galleri</h1>
+
+			<div class="row">
+				<div class="column">
+
+					<div class="boxImgOnly">
+						<img class="imgOnly" src="img/Inkedthomson_LI.jpg" alt="placeholder" class="shopimg">
+						<div class="boxOverImage">
+					    <span><p> Dette bildet er fra bla bla bla... </p></span>
+					  </div>
+					</div>
+
+					<div class="boxImgOnly">
+						<img class="imgOnly" src="img/newton.png" alt="placeholder" class="shopimg">
+						<div class="boxOverImage">
+					    <span><p> Dette bildet er fra bla bla bla... </p></span>
+					  </div>
+					</div>
+
+				</div>
+				<div class="column">
+
+					<div class="boxImgOnly">
+						<img class="imgOnly" src="img/crow.png" alt="placeholder" class="shopimg">
+						<div class="boxOverImage">
+					    <span><p> Dette bildet er fra bla bla bla... </p></span>
+					  </div>
+					</div>
+
+					<div class="boxImgOnly">
+						<img class="imgOnly" src="img/Inkedthomson_LI.jpg" alt="placeholder" class="shopimg">
+						<div class="boxOverImage">
+					    <span><p> Dette bildet er fra bla bla bla... </p></span>
+					  </div>
+					</div>
+
+				</div>
+				<div class="column">
+
+					<div class="boxImgOnly">
+						<img class="imgOnly" src="img/newton.png" alt="placeholder" class="shopimg">
+						<div class="boxOverImage">
+					    <span><p> Dette bildet er fra bla bla bla... </p></span>
+					  </div>
+					</div>
+
+					<div class="boxImgOnly">
+						<img class="imgOnly" src="img/crow.png" alt="placeholder" class="shopimg">
+						<div class="boxOverImage">
+					    <span><p> Dette bildet er fra bla bla bla... </p></span>
+					  </div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<footer>
+			<p id="footer" style="text-align:center">&copy; Gruppe 33 - 2020</p>
+		</footer>
+
+		<script type="text/javascript">
+
+			var imgIndex = 1;
+			displayImg(imgIndex);
+
+			function currentImg(n) {
+				displayImg(imgIndex = n);
+			}
+
+			function changeImg(n) {
+				displayImg(imgIndex += n);
+			}
+
+			function displayImg(n) {
+
+				var images = document.getElementsByClassName("imgSlide");
+				var dots = document.getElementsByClassName("dot");
+
+				if (n > images.length) {
+					imgIndex = 1;
+				}
+
+				if (n < 1) {
+					imgIndex = images.length;
+				}
+
+				var i;
+				for (i = 0; i < images.length; i++) {
+						images[i].style.display = "none";
+				}
+
+				for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" currentDot", "");
+		  	}
+
+				images[imgIndex - 1].style.display = "block";
+				dots[imgIndex - 1].className += " currentDot";
+			}
+
+		</script>
+
+	</body>
+</html>
