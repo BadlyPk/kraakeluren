@@ -1,3 +1,5 @@
+//From https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp (with some of our changes)
+
 window.onscroll = function() {
   scrollFunction()
   growShrinkLogo()
