@@ -3,14 +3,29 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="keywords" content="Kråke, Kråkeluren, Spanskrøret, NTNU">
-		<title>P1</title>
+		<title>Sanger</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
 	</head>
-
+	<div id="navbar">
+		<a href="#index" id="logo"><img src="img/kraak-logo.png" id='Logo' alt=""></a>
+		<div id="navbar-right">
+		  <a href="index.html">Hjemmeside</a>
+		  <a href="about_styret.html">About styret</a>
+		  <a href="about.html">About Kråkeluren</a>
+		  <a href="blog.html">Kråkebråk (Blog)</a>
+		  <a href="calendar.html">Kalender</a>
+		  <a href="contact.html">Kontakt oss</a>
+		  <a href="gallery.html">Galleri</a>
+		  <a href="shop.html">Kråkeshop</a>
+		  <a class="active" href="songs.html">Sanger</a>
+		</div>
+	</div>
 	<body>
-		<div class="container">
+		<div class="container" style="margin-top:210px;padding:15px 15px 2500px">
 			<h1>Sanghefte</h1>
-			<div class="songbox">
+			<p style="text-align:center">Syng med! - Trykk på en sang-blokk for å se teksten!</p>
+			<div id="divSongList">
 			</div>
 		</div>
 
@@ -18,5 +33,7 @@
 		<footer>
 			<p id="footer" style="text-align:center">&copy; Gruppe 33 - 2020</p>
 		</footer>
+		<script src="scripts/navbar.js"></script>
+		<script src="scripts/songlyrics.js"></script>
 	</body>
 </html>

@@ -240,3 +240,20 @@ h1 {
 .dot:hover, .currentDot {
   background-color: #a4a4a4;
 }
+
+.songBox {
+  background-color: #f0f0f0;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: block;
+}
+
+.songBox > h2 {
+  text-align: center;
+}
+
+.songBox > p {
+  padding-left: 20%;
+  padding-right: 20%;
+}
