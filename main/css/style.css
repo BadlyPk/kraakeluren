@@ -246,14 +246,15 @@ h1 {
   margin: 10px;
   margin-bottom: 20px;
   padding: 10px;
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 .songBox > h2 {
   text-align: center;
 }
 
-.songBox > p {
-  padding-left: 20%;
-  padding-right: 20%;
+.songBox > p > i {
+  display: inherit;
 }
