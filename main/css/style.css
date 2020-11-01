@@ -230,6 +230,6 @@ h1 {
   text-align: center;
 }
 
-.songBox > p > i {
-  display: inherit;
+.lyricBox {
+  max-height: 600px;
 }
