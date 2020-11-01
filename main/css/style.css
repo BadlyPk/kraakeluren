@@ -222,7 +222,7 @@ h1 {
   margin-bottom: 20px;
   padding: 10px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
 }
 
@@ -231,5 +231,15 @@ h1 {
 }
 
 .lyricBox {
-  max-height: 600px;
+  padding-bottom: 20px;
+}
+
+/* Here I want to pick out specific songs that should be divided into columns by default
+if the browser's size allows for it - otherwise, it'll be a single column as normal.
+Problem: some columns unfortunately split up in the middle of verses, haven't found a fix yet :/ */
+@media (min-width: 1000px) {
+  #s1_lyr,#s2_lyr,#s7_lyr,#s8_lyr,#s13_lyr,#s14_lyr,#s18_lyr,#s20_lyr {
+    columns: auto 2;
+    column-gap: 1em;
+  }
 }
