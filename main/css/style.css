@@ -20,10 +20,8 @@ h1 {
 
 .overlay {
   position: absolute;
-  top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  height: 48px;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
@@ -32,7 +30,6 @@ h1 {
 
 #abouttext {
   padding-left: 20px;
-  color: white;
 }
 
 .overlay span {
@@ -93,10 +90,8 @@ h1 {
 
 .boxOverImage {
   position: absolute;
-  top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  height: 60px;
   width: 100%;
   opacity: 0;
   transition: .6s ease;
@@ -105,7 +100,7 @@ h1 {
 
 .boxOverImage span {
     position: absolute;
-    bottom: 8px;
+    bottom: 0px;
     left: 16px;
 }
 
@@ -126,9 +121,9 @@ h1 {
   margin: 0;
 }
 
-.column_in img{
+.column_in img,video{
   width: 60%;
-  margin-right: 5px;
+  margin-right: 15px;
   float: left;
 }
 
@@ -192,40 +187,9 @@ h1 {
   cursor: pointer;
 }
 
-.carousel {
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-.imgSlide, .imgSlideImg, .prevImg, .nextImg {
-  height: 30vw;
-}
-
-.prevImg, .nextImg {
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  padding-left: 20px;
-  padding-right: 30px;
-  top: 0;
-  font-size: 30px;
-  transition: 0.6s ease;
-}
-
-.prevImg p, .nextImg p {
-  margin: 0;
-  position: absolute;
-  top: 45%;
-}
-
-.prevImg:hover, .nextImg:hover {
-  background-color: rgba(240,240,240,0.5);
-}
-
-.nextImg {
-  right: 0;
+.ccImg {
+	height: 30vw;
+	width: 100%;
 }
 
 .dots {
@@ -248,13 +212,19 @@ h1 {
   background-color: #a4a4a4;
 }
 
+.carousel {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
 .songBox {
   background-color: #f0f0f0;
   margin: 10px;
   margin-bottom: 20px;
   padding: 10px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
 }
 
@@ -262,6 +232,16 @@ h1 {
   text-align: center;
 }
 
-.songBox > p > i {
-  display: inherit;
+.lyricBox {
+  padding-bottom: 20px;
+}
+
+/* Here I want to pick out specific songs that should be divided into columns by default
+if the browser's size allows for it - otherwise, it'll be a single column as normal.
+Problem: some columns unfortunately split up in the middle of verses, haven't found a fix yet :/ */
+@media (min-width: 1000px) {
+  #s1_lyr,#s2_lyr,#s7_lyr,#s8_lyr,#s13_lyr,#s14_lyr,#s18_lyr,#s20_lyr {
+    columns: auto 2;
+    column-gap: 1em;
+  }
 }
