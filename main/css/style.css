@@ -20,10 +20,8 @@ h1 {
 
 .overlay {
   position: absolute;
-  top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  height: 48px;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
@@ -32,7 +30,6 @@ h1 {
 
 #abouttext {
   padding-left: 20px;
-  color: white;
 }
 
 .overlay span {
@@ -93,10 +90,8 @@ h1 {
 
 .boxOverImage {
   position: absolute;
-  top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  height: 60px;
   width: 100%;
   opacity: 0;
   transition: .6s ease;
@@ -105,7 +100,7 @@ h1 {
 
 .boxOverImage span {
     position: absolute;
-    bottom: 8px;
+    bottom: 0px;
     left: 16px;
 }
 
@@ -126,13 +121,7 @@ h1 {
   margin: 0;
 }
 
-.column_in img{
-  width: 60%;
-  margin-right: 15px;
-  float: left;
-}
-
-.column_in video{
+.column_in img,video{
   width: 60%;
   margin-right: 15px;
   float: left;
