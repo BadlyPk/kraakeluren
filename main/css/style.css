@@ -136,6 +136,11 @@ h1 {
   width: 100%;
 }
 
+.galcontainer{
+  position: relative;
+  display:none;
+}
+
 .galcolumn {
   float: left;
   width: 25%;
@@ -161,26 +166,28 @@ h1 {
 
 #imgtext {
   position: absolute;
-  bottom: 400px;
-  left: 300px;
-  color: gold;
+  top: 10px;
+  left: 150px;
+  color: black;
   font-style: italic;
   font-size: 50px;
   visibility: visible;
 }
+
+
 #expandedImg{
   position: absolute;
-  right:250px;
-  bottom:-25px;
+  right:200px;
+  top:425px;
   width: 30%;
   height:75%;
 }
 
 .closebtn {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 15px;
-  color: black;
+  color: red;
   font-size: 35px;
   cursor: pointer;
 }
