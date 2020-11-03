@@ -49,7 +49,7 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 900px) {
   /* #navbar { */
   /* padding: 20px 10px !important; */
   /* } */
