@@ -306,3 +306,9 @@ li{
   background-repeat: no-repeat;
   width:10px;
 }
+
+.braakImg {
+  float: left;
+  width: 50%;
+  padding-right: 15px;
+}
