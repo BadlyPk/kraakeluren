@@ -80,7 +80,6 @@ h1 {
   margin: 10px;
   margin-bottom: 20px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   position: relative;
 }
@@ -95,6 +94,30 @@ h1 {
   max-width: 100%;
   min-width: 100%;
 }
+
+
+
+.boardMem {
+  margin: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.boardMemImg {
+  text-align: center;
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+}
+
+.column_board {
+  flex-direction: column;
+}
+
+
+
 
 .boxOverImage {
   position: absolute;
