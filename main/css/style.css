@@ -1,4 +1,4 @@
-h1, h3 {
+h1, h2, h3 {
   text-align: center;
   font-family: 'Open Sans', Arial, sans-serif;
 }
@@ -71,9 +71,6 @@ h1 {
   flex-direction: row;
 }
 
-
-
-
 .boxImgOnly {
   background-color: #f0f0f0;
   margin: 10px;
@@ -81,6 +78,12 @@ h1 {
   display: flex;
   flex-direction: row;
   position: relative;
+}
+
+.calendarDateBox {
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: row;
 }
 
 .imgOnly {
@@ -107,9 +110,6 @@ h1 {
 .boxImgOnly:hover .boxOverImage {
   opacity: 1;
 }
-
-
-
 
 @media (max-width: 850px) {
   .row {
