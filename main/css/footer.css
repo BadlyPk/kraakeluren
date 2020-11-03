@@ -63,14 +63,10 @@
   background: #3B5998;
 }
 
-.icon ul .twitter:hover {
-  background: #55ACEE;
-}
-
 .icon ul .instagram:hover {
   background: #125688;
 }
 
-.icon ul .snapchat:hover {
-  background: #fffc00;
+.icon ul .envelope:hover {
+  background: #fff;
 }
