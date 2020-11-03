@@ -246,6 +246,7 @@ h1 {
 
 .songBox > h2 {
   text-align: center;
+  cursor: pointer;
 }
 
 .lyricBox {
