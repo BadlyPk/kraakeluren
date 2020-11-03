@@ -66,6 +66,11 @@ h1 {
   flex-direction: row;
 }
 
+.fixedRow {
+  display: flex;
+  flex-direction: row;
+}
+
 .box {
   background-color: #f0f0f0;
   margin: 10px;
@@ -84,10 +89,19 @@ h1 {
   position: relative;
 }
 
-.calendarDateBox {
+.calendarDayBox {
   background-color: #e3e3e3;
   display: flex;
   flex-direction: row;
+}
+.calendarDateBox {
+  background-color: #e3e3e3;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70px;
+  margin: 6px;
+  padding: 5px 0 0 5px;
 }
 
 .imgOnly {
@@ -257,6 +271,11 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   }
 }
 
+@media (max-width:1200px) {
+  #map{
+    display: none;
+  }
+}
 
 #map {
   position:absolute;
@@ -268,6 +287,7 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   height:50%;
 }
 
+
 #sosmed {
   margin: 35px;
   text-align: left;
@@ -275,7 +295,7 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
 
 #mazetxt{
   position: relative;
-  top:75px;
+  top:65px;
   margin: 35px;
   text-align: right;
 }
