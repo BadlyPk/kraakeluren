@@ -112,6 +112,10 @@ h1 {
   border-radius: 50%;
 }
 
+.boardMemImgH {
+  display: none;
+}
+
 .column_board {
   flex-direction: column;
   margin: 0 auto;
