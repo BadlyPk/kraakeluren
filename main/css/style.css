@@ -133,6 +133,12 @@ h1 {
   margin: 0 auto;
 }
 
+.boardText {
+  width: 200px;
+  height: 170px;
+  text-align: center;
+}
+
 
 
 .boxOverImage {
