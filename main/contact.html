@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
 		<meta charset="UTF-8">
 		<meta name="keywords" content="Kråke, Kråkeluren, Spanskrøret, NTNU">
 		<title>Kontakt oss</title>
 		<link rel="icon" href="img/icon.png" type="image/x-icon"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://api.mazemap.com/js/v2.0.14/mazemap.min.css">
+
 	</head>
 	<div id="navbar">
 		<a href="index.html" id="logo"><img src="img/kraak-logo.png" id='Logo' alt=""></a>
@@ -27,21 +30,35 @@
 	<body>
 		<div class="container" style="margin-top:250px;">
 			<h1>Kontakt oss</h1>
+			<h2 id="mazetxt">Her finner du oss</h2>
 			<div id="map" class="mazemap"></div>
 			<div class="sosial">
-				<h2>Sosiale medier</h2>
-					<a href="#" class="fa fa-facebook"></a> Facebook
-					<a href="#" class="fa fa-instagram"></a> Instagram
-					<a href="#" class="fa fa-twitter"></a> Twitter
-					<a href="#" class="fa fa-snapchat-ghost"></a> Snapchat
+				<h2 id="sosmed">Sosiale medier</h2>
+				<ul>
+					<li><a href="https://www.facebook.com/kraakeluren" class="fa fa-facebook"></a> Kråkeluren</li><br>
+					<li><a href="https://www.facebook.com/rolf.olsen.1840" class="fa fa-facebook"></a> Kråkefar tørst</li><br>
+					<li><a href="https://www.instagram.com/kraakeluren/?hl=nb" class="fa fa-instagram"></a> Instagram</li><br>
+					<li><a href="#" class="fa fa-envelope"></a> G-mail<li><br>
+				</ul>
 			</div>
 		</div>
 
 		<footer>
-			<p id="footer" style="text-align:center">&copy; Gruppe 33 - 2020</p>
+				   <div class="footer">
+					  <div class="icon">
+							<ul>
+								<li class="facebook"><a href="https://www.facebook.com/kraakeluren" target="black"><i class="fa fa-facebook"></i></a></li>
+								<li class="instagram"><a href="https://www.instagram.com/kraakeluren/" target="black"><i class="fa fa-instagram"></i></a></li>
+								<li class="envelope"><a href="" target="black"><i class="fa fa-envelope"></i></a></li>
+							</ul>
+					  </div>
+				   </div>
+				   <div class="footer-end">
+					  <p>Made by: Group 33</p>
+				   </div>
 		</footer>
+		<script type='text/javascript' src='https://api.mazemap.com/js/v2.0.14/mazemap.min.js'></script>
 		<script src="scripts/navbar.js"></script>
 		<script src="scripts/contact.js"></script>
-		<script type='text/javascript' src='https://api.mazemap.com/js/v2.0.14/mazemap.min.js'></script>
 	</body>
 </html>

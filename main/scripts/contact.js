@@ -1,17 +1,24 @@
-var map = new map.Map({
-    // container id specified in the HTML
-    container: 'map',
+var map = new Mazemap.Map({
+// container id specified in the HTML
+container: 'map',
 
-    campuses: 121,
+campuses: 1,
 
-    // initial position in lngLat format
-    center: {lng: 13.270286316716465, lat: 52.502217640505705},
+// initial position in lngLat format
+center: {lng: 10.402075, lat: 63.419149},
 
-    // initial zoom
-    zoom: 18,
+// initial zoom
+zoom: 18,
 
-    zLevel: 3
+zLevel: 1
 });
 
-// Add zoom and rotation controls to the map.
-map.addControl(new mazemap.mapboxgl.NavigationControl());
+map.addControl(new Mazemap.mapboxgl.NavigationControl());
+
+var lngLat = map.getCenter();
+
+var marker = new Mazemap.MazeMarker( {
+    zLevel: 1
+} )
+.setLngLat( lngLat )
+.addTo(map);
