@@ -32,13 +32,25 @@
 			<div class="blikråke">
 				<form action="#" method="post">
 					<h1>Bli en kråke du også!</h1>
-          <label for="name">Navn</label>
-          <br><input type="text" id="name" name="name" pattern="[A-Za-z].{1,}" required><br>
-					<br><label for="telefon">Telefon</label>
-          <br><input type="number" id="telefon" name="telefon" pattern="[0-9].{1,}" required><br>
-          <br><label for="e-mail">E-post</label><br>
-          <input type="email" id="e-mail" name="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
-					<br><input type="submit" value="Submit"><br>
+					<fieldset>
+        		<p>
+          		<label for="name">Navn</label>
+          		<input type="text" id="name" name="name" pattern="[A-Za-z].{1,}" required>
+        		</p>
+        		<p>
+          		<label for="telefon">Telefon</label>
+          		<input type="number" id="telefon" name="telefon" pattern="[0-9].{1,}" required>
+        		</p>
+						<p>
+							<label for="e-mail">E-post</label>
+		          <input type="email" id="e-mail" name="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+						</p>
+        		<p>
+          		<label>Skriv noen ord</label>
+          		<textarea id = "myTextArea" rows = "3" cols = "80">Skriv her</textarea>
+        		</p>
+						<br><input type="submit" value="Submit"><br>
+      		</fieldset>
 				</form>
 			</div>
 			<h1 id="kontakt">Kontakt oss</h1>
