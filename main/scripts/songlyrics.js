@@ -39,11 +39,12 @@ for (let i=0; i<arrSongList.length; i++) {
     addSong.innerHTML = "<h2><i>"+arrSongList[i].title+"</i></h2>";
 
     // The lyrics are added as an initially invisible paragraph within each song-div
-    let addLyrics = document.createElement("p");
+    let addLyrics = document.createElement("div");
     addLyrics.innerHTML = arrSongList[i].lyrics;
     addLyrics.style.display = "none";
     // With their own id, which I'll fetch later
     addLyrics.id = arrSongList[i].id+"_lyr";
+    addLyrics.className = "lyricBox" // For styling
 
     addSong.append(addLyrics);
     divSongList.appendChild(addSong);
@@ -59,7 +60,7 @@ function attachToggle(index) {
         let lyricPara = document.getElementById(arrSongBox[index].id+"_lyr");
         // and simply toggle the CSS display
         if (lyricPara.style.display === "none") {
-            lyricPara.style.display = "flex";
+            lyricPara.style.display = "block";
         }
         else {
             lyricPara.style.display = "none";
