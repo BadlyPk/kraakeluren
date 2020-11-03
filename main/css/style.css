@@ -291,13 +291,13 @@ input{
 }
 
 #map {
-  position:absolute;
+  position:relative;
   padding:10px;
   margin:35px;
-  left:750px;
-  top:125%;
-  width: 25%;
-  height:50%;
+  left:550px;
+  top:20px;
+  width: 300px;
+  height:300px;
 }
 
 
@@ -314,8 +314,12 @@ input{
 }
 
 .sosial{
+  position:absolute;
+  top:700px;
   border-style: solid;
-  width:32%;
+  width:25%;
+  height:60%;
+  padding:10px;
 }
 
 .sosial .fa {
