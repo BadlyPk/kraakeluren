@@ -58,3 +58,19 @@
 	font-weight: 700;
 	letter-spacing: 2px;
 }
+
+.icon ul .facebook:hover {
+  background: #3B5998;
+}
+
+.icon ul .twitter:hover {
+  background: #55ACEE;
+}
+
+.icon ul .instagram:hover {
+  background: #125688;
+}
+
+.icon ul .snapchat:hover {
+  background: #fffc00;
+}
