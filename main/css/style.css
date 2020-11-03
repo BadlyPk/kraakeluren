@@ -131,6 +131,12 @@ h1 {
 .column_board {
   flex-direction: column;
   margin: 0 auto;
+  height: 470px;
+}
+
+.boardText {
+  width: 200px;
+  text-align: center;
 }
 
 

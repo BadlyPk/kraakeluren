@@ -8,18 +8,18 @@ document.getElementById("year").innerHTML = currentYear;
 document.getElementById("month").innerHTML = months[currentMonth];
 
 function isLeap(y){
-  if(y % 400 == 0){
-    return True;
-  } else if (y % 100 == 0){
-    return False;
-  } else if (y % 4 == 0){
-    return True;
+  if(y % 400 === 0){
+    return true;
+  } else if (y % 100 === 0){
+    return false;
+  } else if (y % 4 === 0){
+    return true;
   }
-  return False;
+  return false;
 }
 
 function createCalendar(y, m){
-  var timestampString = y.toString() + m.toString() + "01 GMT+1";
+  var timestampString = (m + 1).toString() + " " + "01" + " " + y.toString();
   var timestamp = Date.parse(timestampString);
   var d = new Date(timestamp);
   var fdom = (d.getDay() + 6) % 7;  //First day of month, 0=Mon 1=Tue, 2=Wed ...
@@ -31,14 +31,13 @@ function createCalendar(y, m){
     } else {
       ldom = 28;
     }
-  } else if (m < 7 && m % 2 == 0 || m > 6 && m % 2 == 1){
+  } else if (m < 7 && m % 2 === 0 || m > 6 && m % 2 === 1){
     ldom = 31;
   } else {
     ldom = 30;
   }
 
-  i = 1;
-  iDay = 0;
+  var i = 1;
   while(i <= ldom){
     var r = document.createElement("div");
     r.className = "fixedRow";
@@ -47,12 +46,11 @@ function createCalendar(y, m){
     for (j = 0; j < 7; j++){
       var cdb = document.createElement("div");
       cdb.className = "calendarDateBox";
-      if (iDay == fdom && i <= ldom){
-        cdb.innerHTML = (i).toString();
+      if (j == fdom && i <= ldom){
+        cdb.innerHTML = i.toString();
         i++;
         fdom = (fdom + 1) % 7;
       }
-      iDay = (iDay + 1) % 7;
       r.appendChild(cdb);
     }
     document.getElementById("calendarContainer").appendChild(r);
