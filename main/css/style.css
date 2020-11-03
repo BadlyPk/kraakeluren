@@ -285,11 +285,6 @@ input{
   width:50%;
 }
 
-#kontakt{
-  position:relative;
-  top:50px;
-}
-
 @media (max-width:1200px) {
   #map{
     display: none;
@@ -299,9 +294,8 @@ input{
 #map {
   position:relative;
   padding:10px;
-  margin:35px;
   left:550px;
-  top:20px;
+  bottom:0px;
   width: 300px;
   height:300px;
 }
@@ -320,11 +314,11 @@ input{
 }
 
 .sosial{
-  position:absolute;
-  top:700px;
+  position:relative;
+  bottom:0px;
   border-style: solid;
-  width:25%;
-  height:60%;
+  width:30%;
+  height:350px;
   padding:10px;
 }
 
