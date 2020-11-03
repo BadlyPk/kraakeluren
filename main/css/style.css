@@ -114,8 +114,8 @@ h1 {
 
 .column_board {
   flex-direction: column;
+  margin: 0 auto;
 }
-
 
 
 
@@ -287,9 +287,21 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   }
 }
 
+
+.mazemap {
+  margin:0px;
+  padding:0px;
+  width: 100px;
+  height:100px;
+}
+
+.social h2 {
+  text-align: left;
+}
+
 .sosial .fa {
-  padding: 20px;
-  width: 50px;
+  padding: 10px;
+  width: 35px;
   text-align:center;
   text-decoration: none;
   border-radius: 75%;
@@ -317,18 +329,10 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
 .sosial .fa-snapchat-ghost {
   background: #fffc00;
   color: white;
-  outline-style: solid;
 }
 
 .sosial ul{
-  margin-left: 40px; list-style:none;
-}
-
-.sosial li{
-  padding: .3em 0 1em 100px;
-  background-image: url(free_facebook.jpg);
-  background-repeat: no-repeat;
-  width:10px;
+  margin-left: 10px; list-style:none;
 }
 
 .braakImg {
