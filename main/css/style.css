@@ -259,6 +259,19 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   }
 }
 
+form{
+  text-align:center;
+}
+
+input{
+  width:50%;
+}
+
+#kontakt{
+  position:relative;
+  top:50px;
+}
+
 @media (max-width:1200px) {
   #map{
     display: none;
@@ -270,7 +283,7 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   padding:10px;
   margin:35px;
   left:750px;
-  top:410px;
+  top:125%;
   width: 25%;
   height:50%;
 }
@@ -290,7 +303,7 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
 
 .sosial{
   border-style: solid;
-  width:40%;
+  width:32%;
 }
 
 .sosial .fa {
