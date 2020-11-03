@@ -292,15 +292,31 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
 }
 
 
-.mazemap {
-  margin:0px;
-  padding:0px;
-  width: 100px;
-  height:100px;
+#map {
+  position:absolute;
+  padding:10px;
+  margin:35px;
+  left:750px;
+  top:410px;
+  width: 25%;
+  height:50%;
 }
 
-.social h2 {
+#sosmed {
+  margin: 35px;
   text-align: left;
+}
+
+#mazetxt{
+  position: relative;
+  top:75px;
+  margin: 35px;
+  text-align: right;
+}
+
+.sosial{
+  border-style: solid;
+  width:40%;
 }
 
 .sosial .fa {
@@ -336,7 +352,7 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
 }
 
 .sosial ul{
-  margin-left: 10px; list-style:none;
+  list-style:none;
 }
 
 .braakImg {
