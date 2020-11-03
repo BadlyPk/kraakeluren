@@ -304,18 +304,14 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   color: white;
 }
 
-.sosial .fa-twitter {
-  color: white;
-  background: #55ACEE;
-}
 
 .sosial .fa-instagram {
   background: #125688;
   color: white;
 }
 
-.sosial .fa-snapchat-ghost {
-  background: #fffc00;
+.sosial .fa-envelope {
+  background: black;
   color: white;
 }
 
