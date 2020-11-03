@@ -1,15 +1,17 @@
-function hoverImg(n) {
-  var imgId = document.getElementById("board" + n)
-  var imgIdH = document.getElementById("boardH" + n)
+var boardImages = document.getElementsByClassName("boardMemImg");
 
-  imgId.style.display = "none";
-  imgIdH.style.display = "block";
+var i;
+for (i = 1; i < boardImages.length + 1; i++) {
+  var imgId = document.getElementById("board" + i);
+  imgId.style.backgroundImage = "url('img/picStyre" + i + ".jpg')";
+}
+
+function hoverImg(n) {
+  var imgId = document.getElementById("board" + n);
+  imgId.style.backgroundImage = "url('img/picStyre" + n + "H.jpg')";
 }
 
 function hoverOffImg(n) {
-  var imgId = document.getElementById("board" + n)
-  var imgIdH = document.getElementById("boardH" + n)
-
-  imgId.style.display = "block";
-  imgIdH.style.display = "none";
+  var imgId = document.getElementById("board" + n);
+  imgId.style.backgroundImage = "url('img/picStyre" + n + ".jpg')";
 }
