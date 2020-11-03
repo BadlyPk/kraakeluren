@@ -291,6 +291,11 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   }
 }
 
+@media (max-width:1200px) {
+  #map{
+    display: none;
+  }
+}
 
 #map {
   position:absolute;
@@ -302,6 +307,7 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   height:50%;
 }
 
+
 #sosmed {
   margin: 35px;
   text-align: left;
@@ -309,7 +315,7 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
 
 #mazetxt{
   position: relative;
-  top:75px;
+  top:65px;
   margin: 35px;
   text-align: right;
 }
