@@ -13,5 +13,12 @@ zoom: 18,
 zLevel: 1
 });
 
-// Add zoom and rotation controls to the map.
 map.addControl(new Mazemap.mapboxgl.NavigationControl());
+
+var lngLat = map.getCenter();
+
+var marker = new Mazemap.MazeMarker( {
+    zLevel: 1
+} )
+.setLngLat( lngLat )
+.addTo(map);
