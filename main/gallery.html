@@ -9,32 +9,37 @@
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
 	</head>
 
-	<div id="navbar">
-		<a href="index.html" id="logo"><img src="img/kraak-logo.png" id='Logo' alt=""></a>
-		<div id="navbar-right">
-		  <a href="about.html">Møt Kråkeluren</a>
-		  <a href="about_styret.html">Møt Kråkestyret</a>
-		  <a href="blog.html">Kråkebråk (Blog)</a>
-		  <a href="calendar.html">Kalender</a>
-		  <a href="contact.html">Kontakt oss</a>
-		  <a class="active" href="gallery.html">Galleri</a>
-		  <a href="shop.html">Kråkeshop</a>
-		  <a href="songs.html">Sanghefte</a>
+	<nav>
+		<div id="navbar">
+		  <a href="#index" id="logo"><img src="img/kraak-logo.png" id='Logo'></a>
+		  <div id="navbar-right">
+			<ul>
+				<a href="index.html">Hjem</a>
+				<a href="about_styret.html">Om styret</a>
+				<a href="about.html">Om oss</a>
+				<a href="blog.html">Blogg</a>
+				<a href="calendar.html">Kalender</a>
+				<a href="contact.html">Kontakt oss</a>
+				<a class="active" href="gallery.html">Galleri</a>
+				<a href="shop.html">Kråke-shop</a>
+				<a href="songs.html">Sanger</a>
+			</ul>
+		  </div>
 		</div>
-	</div>
+	</nav>
 
 	<body style="margin-top:160px;">
 		<div class="carousel">
 
-			<div class="cImg">
+			<div class="cImg fade">
 					<img src="img/blue.jpg" class="ccImg" alt="">
 				</div>
 
-				<div class="cImg">
+				<div class="cImg fade">
 					<img src="img/green.png" class="ccImg" alt="">
 				</div>
 
-				<div class="cImg">
+				<div class="cImg fade">
 					<img src="img/red.jpg" class="ccImg" alt="">
 				</div>
 
@@ -73,7 +78,7 @@
 					<div class="boxImgOnly">
 						<img class="imgOnly" src="img/picGal3.jpg" alt="Kråke med tequilahatt - Dec. 2019" class="shopimg">
 						<div class="boxOverImage">
-					    <span><p> Tequilahatt :) Des. 2019 </p></span>
+					    <span><p> Tequilahatt :) - Des. 2019 </p></span>
 					  </div>
 					</div>
 
@@ -112,6 +117,12 @@
 		</footer>
 
 		<script type="text/javascript">
+
+			/* Part of the following JavaScript code in inspired by
+			 		https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+				and
+				 	https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+				We have used a combination of clickable dots and an automatic change in image. */
 
 			var counter = 0;
 			var rerun;

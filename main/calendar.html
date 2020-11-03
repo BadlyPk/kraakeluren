@@ -8,27 +8,59 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/menu.css">
 	</head>
-	<div id="navbar">
-		<a href="index.html" id="logo"><img src="img/kraak-logo.png" id='Logo' alt=""></a>
-		<div id="navbar-right">
-		  <a href="about.html">Møt Kråkeluren</a>
-		  <a href="about_styret.html">Møt Kråkestyret</a>
-		  <a href="blog.html">Kråkebråk (Blog)</a>
-		  <a class="active" href="calendar.html">Kalender</a>
-		  <a href="contact.html">Kontakt oss</a>
-		  <a href="gallery.html">Galleri</a>
-		  <a href="shop.html">Kråkeshop</a>
-		  <a href="songs.html">Sanghefte</a>
+	<nav>
+		<div id="navbar">
+		  <a href="#index" id="logo"><img src="img/kraak-logo.png" id='Logo'></a>
+		  <div id="navbar-right">
+			<ul>
+				<a href="index.html">Hjem</a>
+				<a href="about_styret.html">Om styret</a>
+				<a href="about.html">Om oss</a>
+				<a href="blog.html">Blogg</a>
+				<a class="active" href="calendar.html">Kalender</a>
+				<a href="contact.html">Kontakt oss</a>
+				<a href="gallery.html">Galleri</a>
+				<a href="shop.html">Kråke-shop</a>
+				<a href="songs.html">Sanger</a>
+			</ul>
+		  </div>
 		</div>
-	</div>
+	</nav>
 	<body>
 		<div class="container" style="margin-top:250px;">
+			<h1>Aktivitets-kalender</h1>
+			<div>
+				<div class="box">
+					<div class="column">
+						<div class="row">
+							<h2 id="year" style="margin:0;">Year</h2>
+						</div>
+						<div class="row">
+							<h3 id="month">Month</h3>
+						</div>
+						<div class="row">
+							<div class="calendarDateBox">
+								<div class="column">Mandag</div>
+								<div class="column">Tirsdag</div>
+								<div class="column">Onsdag</div>
+								<div class="column">Torsdag</div>
+								<div class="column">Fredag</div>
+								<div class="column">Lørdag</div>
+								<div class="column">Søndag</div>
+							</div>
+						</div>
+						<div id="calendarBox">
 
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<footer>
 			<p id="footer" style="text-align:center">&copy; Gruppe 33 - 2020</p>
 		</footer>
 		<script src="scripts/navbar.js"></script>
+		<script src="scripts/calendar.js"></script>
 	</body>
 </html>
