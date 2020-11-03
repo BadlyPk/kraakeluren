@@ -80,6 +80,7 @@ h1 {
   margin: 10px;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   position: relative;
 }
