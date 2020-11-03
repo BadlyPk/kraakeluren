@@ -110,10 +110,8 @@ h1 {
   height:200px;
   width:200px;
   border-radius: 50%;
-}
-
-.boardMemImgH {
-  display: none;
+  background-size: 200px 200px;
+  transition: .5s ease;
 }
 
 .column_board {
