@@ -2,6 +2,8 @@
 function scrollFunction2() {
   if(window.innerWidth < 960) {
       document.getElementById("navbar").style.padding = "10px 5px";
+      document.getElementById("Logo").style.width = '80px';
+      document.getElementById("Logo").style.height = '80px';
   } else {
     window.onscroll = function() {
       scrollFunction()
