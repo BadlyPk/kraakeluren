@@ -292,12 +292,15 @@ input{
 }
 
 #map {
-  position:relative;
-  padding:10px;
-  left:550px;
-  bottom:0px;
   width: 300px;
   height:300px;
+}
+
+.mazemap{
+  position:relative;
+  padding:10px;
+  left:0px;
+  top:100%;
 }
 
 
@@ -314,8 +317,6 @@ input{
 }
 
 .sosial{
-  position:relative;
-  bottom:0px;
   border-style: solid;
   width:30%;
   height:350px;
