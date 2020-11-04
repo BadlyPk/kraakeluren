@@ -15,7 +15,7 @@ document.getElementById("month").innerHTML = months[currentMonth - 1];
 //mo: mm
 //da: d / dd
 //event: Kort beskrivelse av aktivitet
-//description: lang beskrivelse av aktivitet
+//description: lang beskrivelse av aktivitet for popup
 var events = [
 {
   yr: 2020,
