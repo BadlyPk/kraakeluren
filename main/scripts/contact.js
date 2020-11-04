@@ -18,7 +18,19 @@ map.addControl(new Mazemap.mapboxgl.NavigationControl());
 var lngLat = map.getCenter();
 
 var marker = new Mazemap.MazeMarker( {
-    zLevel: 1
+    zLevel: 1,
+    color: "navy",
+    size: 40,
+    glyphColor:'#FFF',
+    glyph: 'Kr',
+    innerCircle: false
 } )
+
+
 .setLngLat( lngLat )
 .addTo(map);
+
+var popup = new Mazemap.Popup({closeOnClick: true, offset: [0, -27]})
+    .setHTML('Her ligger kontoret som Kråkeluren tilhører');
+
+marker.setPopup(popup);
