@@ -84,7 +84,7 @@ body {
 }
 
 @media screen and (max-width: 501px) {
-  .navbar-right a:not(:first-child), .dropdown .dropbtn {
+  .navbar-right a, .dropdown .dropbtn {
     display: none;
   }
   .navbar-right a.icon {
@@ -92,8 +92,8 @@ body {
     display: block;
   }
   #Logo {
-	  width: 130px;
-	  height: 130px;
+	  width: 80px;
+	  height: 80px;
   }
 }
 
@@ -111,4 +111,12 @@ body {
     display: block;
     text-align: left;
   }
+}
+
+.button {
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
