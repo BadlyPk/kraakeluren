@@ -325,17 +325,16 @@ textarea {
   max-width: 600px;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, input[type=button]:hover {
   cursor: pointer;
 }
 
-input[type=submit] {
+input[type=submit], input[type=button] {
   padding: 15px 32px;
   border: none;
   border-radius: 5px;
-  width: 15%;
   min-width: inherit;
-  background-color: #f0f0f0;
+  background-color: #e3e3e3;
 }
 
 #map {
@@ -456,4 +455,64 @@ input[type=submit] {
 .infoText0 {
   width: 80%;
   margin: 0 auto;
+}
+
+.handlekurvButton {
+  width: 100%;
+  min-width: inherit;
+  background-color: #e3e3e3;
+}
+
+#slettBestilling, #videre {
+  margin-bottom: 5px;
+}
+
+.textBox {
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#textBox {
+  display: none;
+}
+
+#kontaktInfo {
+  display: none;
+}
+
+#takk {
+  display: none;
+}
+
+#epost {
+  width: 100%;
+}
+
+#validateTekst {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .textBox {
+    width: 100%;
+  }
+}
+
+@media (min-width: 850px) {
+  .textBox {
+    width: 40%;
+  }
+}
+
+.textBox p {
+  text-align: center;
+}
+
+.buttons {
+  bottom: 0;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
