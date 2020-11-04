@@ -10,27 +10,69 @@ document.getElementById("month").innerHTML = months[currentMonth];
 var events = [
 {
   yr: 2020,
+  mo: 9,
+  da: 7,
+  event: "Åpning av identitetsarealet for LUR"
+},
+{
+  yr: 2020,
+  mo: 9,
+  da: 9,
+  event: "Semesterets første Kråkeøving"
+},
+{
+  yr: 2020,
+  mo: 9,
+  da: 11,
+  event: "Spanskrørets opptakstur"
+},
+{
+  yr: 2020,
+  mo: 9,
+  da: 17,
+  event: "Semesterets andre Kråkeøving"
+},
+{
+  yr: 2020,
+  mo: 9,
+  da: 19,
+  event: "Spanskrørets immatrikuleringsball 2020"
+},
+{
+  yr: 2020,
+  mo: 9,
+  da: 26,
+  event: "Kråkelurens Lavvotur 2020"
+},
+{
+  yr: 2020,
   mo: 10,
-  da: 24,
-  event: "Lorem ipsum"
+  da: 8,
+  event: "Semesterets første kjellerøving"
+},
+{
+  yr: 2020,
+  mo: 10,
+  da: 11,
+  event: "Spanskrøret idrett 10-års jubileum"
+},
+{
+  yr: 2020,
+  mo: 10,
+  da: 21,
+  event: "Semesterets andre kjellerøving"
+},
+{
+  yr: 2020,
+  mo: 10,
+  da: 30,
+  event: "XYZ-faktor 2020"
 },
 {
   yr: 2020,
   mo: 11,
-  da: 12,
-  event: "Ut auctor malesuada molestie."
-},
-{
-  yr: 2019,
-  mo: 11,
-  da: 20,
-  event: "Lorem ipsum"
-},
-{
-  yr: 2020,
-  mo: 11,
-  da: 29,
-  event: "Quisque ullamcorper lacus vel magna."
+  da: 7,
+  event: "Julekos med Spanskrøret"
 }
 ];
 
