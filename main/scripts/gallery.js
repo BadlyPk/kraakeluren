@@ -43,12 +43,12 @@ function changeImg(counter, click) {
     counter = 0;
   }
 
-  /* If the user clicks a dot, it will stop the rerun so that the function does not run several times at once (without this we would have the images change seemingly random and not with 3 seconds between) */
+  /* If the user clicks a dot, it will stop the rerun so that the function does not run several times at once (without this we would have the images change seemingly random and not with 5 seconds between) */
   if (click === 1) {
     clearTimeout(rerun);
   }
 
-  /* Run the carousel function again after 3 seconds */
-  rerun = setTimeout(function() { changeImg(counter, 0); }, 3000);
+  /* Run the carousel function again after 5 seconds */
+  rerun = setTimeout(function() { changeImg(counter, 0); }, 5000);
 
 }

@@ -5,7 +5,7 @@ container: 'map',
 campuses: 1,
 
 // initial position in lngLat format
-center: {lng: 10.402075, lat: 63.419149},
+center: {lng: 10.404969, lat: 63.415841},
 
 // initial zoom
 zoom: 18,
@@ -31,6 +31,6 @@ var marker = new Mazemap.MazeMarker( {
 .addTo(map);
 
 var popup = new Mazemap.Popup({closeOnClick: true, offset: [0, -27]})
-    .setHTML('Her ligger kontoret som Kråkeluren tilhører');
+    .setHTML('Spanskrørets kontor, som Kråkeluren tilhører');
 
 marker.setPopup(popup);
