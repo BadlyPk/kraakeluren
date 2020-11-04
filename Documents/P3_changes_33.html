@@ -90,10 +90,13 @@
 		<div>
 		<h2> Completion of requirements </h2>
 			<h3> Image carousel (gallery.js) </h3>
-			<p> <i>Handled by: Cathrine</i><br> blabla </p>
+			<p> <i>Handled by: Cathrine</i><br> I used two tutorials from <i>w3schools</i> as inspiration (links are in the comments of gallery.js) and created a image carousel that changes images on a timer (5 seconds apart), with the possibility of clicking "dots" to change the image as well. The comments in the file explains quite thoroughly what happens and how the carousel works. I also added a small animation when the images change, but this is with CSS. </p>
 
 			<h3> Image transition (about_styret.js) </h3>
-			<p> <i>Handled by: Cathrine</i><br> blabla </p>
+			<p> <i>Handled by: Cathrine</i><br> This code is used to change the images of the board members on the about_styret.html page on hover. First I loop through the nine (number of board members) empty divs that are above the names and text, and add different background images to these. We named the different jpg-files similarly (only a different number at the end) which made this loop easier and shorter to write than to manually set the background images. Then I used the functions "onmouseover" and "onmouseout" to decide in JS what will happen when the user moves the cursor over the image and off again. I defined two functions that changes the image depending on what you do, and these have a number-argument to decide which of the jpg-files to set as background image. Again, this is easier than to write nine different hover-codes in CSS. </p>
+
+			<h3> Order items (shop.js) </h3>
+			<p> <i>Handled by: Cathrine</i><br> This code was as mentioned not in our inital plan, but we added it to make the website even more user friendly and interactive. The code is quite long, but a big part of it is getting the elements from the shop.html-file and changing the display. This functionality allows the user to add items to a cart and "order" them, see the section about shop.html above. I created a layout where the user would have to click "add to cart" on items to then display the cart, the price and two buttons. These buttons lets the user clear the cart or go to "ordering". By choosing the last one, an input field is displayed where the user have to enter their email address before "ordering". Here I also used email validation, which I had to do using JS instead of the "required" attribute, since I have functions on the "order" button that creates a problem in HTML forms. The comments explain the code in more depth as well. </p>
 
 			<h3> Interactive map (contact.js) </h3>
 			<p> <i>Handled by: Adrian</i><br>This script solely presents the interactive map on contact.html. I have use this page <a href="https://api.mazemap.com/js/v2.0.14/docs/#intro">Mazemap intro</a>
