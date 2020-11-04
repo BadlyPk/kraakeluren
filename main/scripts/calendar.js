@@ -92,7 +92,7 @@ var events = [
   mo: 11,
   da: 7,
   event: "Julekos med Spanskrøret",
-  description: ""
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu quam, aliquam non tortor et, pharetra placerat sem. Morbi posuere ultrices hendrerit. Aliquam felis massa, tincidunt in tortor quis, porttitor porta tellus. Mauris vel diam at dui semper vulputate. Curabitur consequat, lectus quis dictum laoreet, nulla arcu ultricies sapien, euismod."
 }
 ];
 
@@ -203,15 +203,15 @@ function popUp(box){
   title.className = "fixedRow";
   title.style.justifyContent = "space-between";
   var d = box.children[0].innerHTML;
-  var titleEvent = events.find(e => e.yr === y && e.mo === m && e.da == d);
+  var dayEvent = events.find(e => e.yr === y && e.mo === m && e.da == d);
 
   var h = document.createElement("H2");
-  h.style.margin = "15px 10px 1em 10px";
+  h.style.margin = "15px 10px 0 10px";
   var t = "";
   if (parseInt(d) < 10){
     t = "0";
   }
-  var t = t + d + "/" + titleEvent.mo + "-" + titleEvent.yr + ": " + titleEvent.event;
+  var t = t + d + "/" + dayEvent.mo + "-" + dayEvent.yr + ": " + dayEvent.event;
   h.appendChild(document.createTextNode(t));
   title.appendChild(h);
 
@@ -221,8 +221,16 @@ function popUp(box){
     document.getElementById("screenCover").remove();
   }
   title.appendChild(i);
-
   popup.appendChild(title);
+
+  var desc = document.createElement("div");
+  desc.className = "fixedRow";
+  var p = document.createElement("P");
+  p.innerHTML = dayEvent.description;
+  p.style.margin = "15px";
+  desc.appendChild(p);
+  popup.appendChild(desc);
+
   cover.appendChild(popup);
   document.body.appendChild(cover);
 }
