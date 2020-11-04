@@ -161,7 +161,7 @@ td {
   left: 50%;
   top: 30%;
   width: 50%;
-  height: 50%;
+  height: auto;
   transform: translate(-50%, 0);
 }
 
