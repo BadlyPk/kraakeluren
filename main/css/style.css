@@ -78,7 +78,6 @@ h1 {
   padding: 10px;
   display: flex;
   flex-direction: row;
-  box-shadow: 0 4px 8px 0 rgb(227,227,227), 0 6px 20px 0 rgb(227,227,227);
 }
 
 .boxImgOnly {
