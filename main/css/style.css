@@ -71,6 +71,7 @@ h1 {
 .fixedRow {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .box {
@@ -96,24 +97,55 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+
+.arrow {
+  cursor: pointer;
+  margin: 0 10px 0 10px;
+  margin-block-start: 1.33em;
+}
+
+.cross {
+  cursor: pointer;
+  margin: 0 6px 0 6px;
+  height: 100%;
+}
+
 .calendarDateBox {
   background-color: #e3e3e3;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 70px;
-  margin: 6px;
+  margin: 8px;
 }
 
 .dateBox {
   float: left;
-  margin: 6px;
+  margin: 6px 6px 2px 6px;
   max-width: 2ch;
 }
 
 .eventBox {
   font-size: 65%;
   margin-left: 4px;
+}
+
+#screenCover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.calendarDescription {
+  background-color: #e3e3e3;
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, 0);
 }
 
 .imgOnly {
@@ -408,7 +440,7 @@ input[type=submit], input[type=button] {
   padding-right: 15px;
 }
 
-.box, .formBox, .sosial, .boardMemImg, .boxImgOnly, .shopBox1, .shopBox2 {
+.box, .formBox, .sosial, .boardMemImg, .boxImgOnly, .calendarDayBox, .calendarDateBox, .calendarDescription, .shopBox1, .shopBox2{
   box-shadow: 0 4px 8px 0 rgba(120,120,120,.2), 0 6px 20px 0 rgba(120,120,120,.2);
 }
 
