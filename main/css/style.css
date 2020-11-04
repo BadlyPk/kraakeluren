@@ -294,13 +294,10 @@ input{
 #map {
   width: 300px;
   height:300px;
-}
-
-.mazemap{
-  position:relative;
+  position:absolute;
   padding:10px;
-  left:0px;
-  top:100%;
+  left:775px;
+  top:850px;
 }
 
 
