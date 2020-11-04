@@ -327,6 +327,7 @@ textarea {
 
 input[type=submit]:hover, input[type=button]:hover {
   cursor: pointer;
+  background-color: #cacaca;
 }
 
 input[type=submit], input[type=button] {
