@@ -7,6 +7,33 @@ const months = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "Au
 document.getElementById("year").innerHTML = currentYear;
 document.getElementById("month").innerHTML = months[currentMonth];
 
+var events = [
+{
+  yr: 2020,
+  mo: 10,
+  da: 24,
+  event: "Lorem ipsum"
+},
+{
+  yr: 2020,
+  mo: 11,
+  da: 12,
+  event: "Ut auctor malesuada molestie."
+},
+{
+  yr: 2019,
+  mo: 11,
+  da: 20,
+  event: "Lorem ipsum"
+},
+{
+  yr: 2020,
+  mo: 11,
+  da: 29,
+  event: "Quisque ullamcorper lacus vel magna."
+}
+];
+
 function isLeap(y){
   if(y % 400 === 0){
     return true;
@@ -17,6 +44,7 @@ function isLeap(y){
   }
   return false;
 }
+
 
 function createCalendar(y, m){
   var timestampString = (m + 1).toString() + " " + "01" + " " + y.toString();
@@ -37,6 +65,8 @@ function createCalendar(y, m){
     ldom = 30;
   }
 
+  var eiM = events.filter(e => e.yr === y && e.mo === (m + 1));   //Find all events in this month and year
+
   var i = 1;
   while(i <= ldom){
     var r = document.createElement("div");
@@ -47,7 +77,19 @@ function createCalendar(y, m){
       var cdb = document.createElement("div");
       cdb.className = "calendarDateBox";
       if (j == fdom && i <= ldom){
-        cdb.innerHTML = i.toString();
+        var db = document.createElement("div");
+        db.className = "dateBox";
+        db.innerHTML = i.toString();
+        cdb.appendChild(db);
+
+        var ed = eiM.find(e => e.da === i);
+        if (ed != undefined){
+          var eb = document.createElement("div");
+          eb.className = "eventBox";
+          eb.innerHTML = ed.event;
+          cdb.appendChild(eb);
+        }
+
         i++;
         fdom = (fdom + 1) % 7;
       }
