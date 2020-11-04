@@ -2,6 +2,8 @@
 function scrollFunction2() {
   if(window.innerWidth < 960) {
       document.getElementById("navbar").style.padding = "10px 5px";
+      document.getElementById("Logo").style.width = '80px';
+      document.getElementById("Logo").style.height = '80px';
   } else {
     window.onscroll = function() {
       scrollFunction()
@@ -29,5 +31,14 @@ function scrollFunction() {
     document.getElementById("navbar").style.padding = "40px 10px";
     document.getElementById("Logo").style.width = '150px';
     document.getElementById("Logo").style.height = '150px';
+  }
+}
+
+function myFunction() {
+  var x = document.getElementById("navbar-right");
+  if (x.className === "navbar-right") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-right";
   }
 }
