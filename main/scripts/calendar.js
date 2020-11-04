@@ -141,7 +141,8 @@ function createCalendar(){
       if (j == fdom && i <= ldom){
         if (y === currentYear && m === currentMonth && i === currentDate){
           cdb.style.backgroundColor = "#AABBFF";
-          cdb.style.border = "2px solid #000000"
+          cdb.style.border = "2px solid #000000";
+          cdb.style.borderRadius = "6px";
         }
 
         var db = document.createElement("div");
