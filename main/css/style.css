@@ -165,6 +165,8 @@ h1 {
 @media (max-width: 850px) {
   .row {
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 
@@ -277,16 +279,32 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   }
 }
 
-form{
+form {
   text-align:center;
 }
 
-input{
+input {
   width:50%;
 }
 
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+input[type=submit] {
+  padding: 15px 32px;
+  border: none;
+  border-radius: 5px;
+  width: 15%;
+  min-width: inherit;
+  background-color: #f0f0f0;
+}
+
 @media (max-width:1200px) {
-  #map{
+  #map {
+    display: none;
+  }
+  #mazetxt {
     display: none;
   }
   #mazetxt{
