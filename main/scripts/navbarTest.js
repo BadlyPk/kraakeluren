@@ -31,3 +31,12 @@ function scrollFunction() {
     document.getElementById("Logo").style.height = '150px';
   }
 }
+
+function myFunction() {
+  var x = document.getElementById("navbar-right");
+  if (x.className === "navbar-right") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar-right";
+  }
+}

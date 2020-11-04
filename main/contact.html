@@ -3,6 +3,7 @@
 	<head>
 		<meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta name="keywords" content="Kråke, Kråkeluren, Spanskrøret, NTNU">
 		<title>Kontakt oss</title>
 		<link rel="icon" href="img/icon.png" type="image/x-icon"/>
@@ -17,7 +18,7 @@
 		<a href="index.html" id="logo"><img src="img/kraak-logo.png" id='Logo' alt=""></a>
 		<div id="navbar-right">
 		  <a href="about.html">Møt Kråkeluren</a>
-		  <a href="about_styret.html">Møt Kråkestyret</a>
+		  <a href="about_styret.html">Møt styret</a>
 		  <a href="blog.html">Kråkebråk (Blog)</a>
 		  <a href="calendar.html">Kalender</a>
 		  <a class="active" href="contact.html">Kontakt oss</a>
@@ -28,31 +29,69 @@
 	</div>
 
 	<body>
-		<div class="container" style="margin-top:250px;">
-			<div class="blikråke">
-				<form action="#" method="post">
-					<h1>Bli en kråke du også!</h1>
-          <label for="name">Navn</label>
-          <br><input type="text" id="name" name="name" pattern="[A-Za-z].{1,}" required><br>
-					<br><label for="telefon">Telefon</label>
-          <br><input type="number" id="telefon" name="telefon" pattern="[0-9].{1,}" required><br>
-          <br><label for="e-mail">E-post</label><br>
-          <input type="email" id="e-mail" name="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
-					<br><input type="submit" value="Submit"><br>
-				</form>
+		<div class="container" style="margin-top:160px;">
+
+			<h1>Bli en kråke du også!</h1>
+
+			<div class="formBox">
+				<div class="form">
+					<form action="#" method="post">
+						<fieldset>
+	        		<p>
+	          		<label for="name">Navn</label>
+	          		<input type="text" id="name" name="name" pattern="[A-Za-z].{1,}" required>
+	        		</p>
+	        		<p>
+	          		<label for="telefon">Telefon</label>
+	          		<input type="number" id="telefon" name="telefon" pattern="[0-9].{1,}" required>
+	        		</p>
+							<p>
+								<label for="e-mail">E-post</label>
+			          <input type="email" id="e-mail" name="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+							</p>
+	        		<p>
+	          		<label>Skriv noen ord</label><br>
+	          		<textarea id = "myTextArea" rows = "5" cols = "80" placeholder="Skriv her"></textarea>
+	        		</p>
+							<br><input type="submit" value="Submit"><br>
+	      		</fieldset>
+					</form>
+				</div>
 			</div>
+
 			<h1 id="kontakt">Kontakt oss</h1>
-			<h2 id="mazetxt">Her finner du oss</h2>
-			<div id="map" class="mazemap"></div>
-			<div class="sosial">
-				<h2 id="sosmed">Sosiale medier</h2>
-				<ul>
-					<li><a href="https://www.facebook.com/kraakeluren" class="fa fa-facebook"></a> Kråkeluren</li><br>
-					<li><a href="https://www.facebook.com/rolf.olsen.1840" class="fa fa-facebook"></a> Kråkefar tørst</li><br>
-					<li><a href="https://www.instagram.com/kraakeluren/?hl=nb" class="fa fa-instagram"></a> Instagram</li><br>
-					<li><a href="#" class="fa fa-envelope"></a> kraakeluren@gmail.com<li><br>
-				</ul>
+
+			<div class="row">
+
+				<div class="column">
+
+					<div class="sosial">
+						<h2 id="sosmed">Sosiale medier</h2>
+						<ul>
+							<li><a href="https://www.facebook.com/kraakeluren" class="fa fa-facebook"></a> Kråkeluren</li><br>
+							<li><a href="https://www.facebook.com/rolf.olsen.1840" class="fa fa-facebook"></a> Kråkefar tørst</li><br>
+							<li><a href="https://www.instagram.com/kraakeluren/?hl=nb" class="fa fa-instagram"></a> Instagram</li><br>
+							<li><a href="mailto:kraakeluren@gmail.com" class="fa fa-envelope"></a> kraakeluren@gmail.com<li><br>
+						</ul>
+					</div>
+
+				</div>
+				<div class="column">
+
+					<div class="sosial">
+						<h2 id="mazetxt">Her finner du oss</h2>
+						<div class="map">
+							<div id="map" class="mazemap"></div>
+						</div>
+					</div>
+
+				</div>
+
 			</div>
+
+
+
+
 		</div>
 
 		<footer>
@@ -61,7 +100,7 @@
 							<ul>
 								<li class="facebook"><a href="https://www.facebook.com/kraakeluren" target="black"><i class="fa fa-facebook"></i></a></li>
 								<li class="instagram"><a href="https://www.instagram.com/kraakeluren/" target="black"><i class="fa fa-instagram"></i></a></li>
-								<li class="envelope"><a href="" target="black"><i class="fa fa-envelope"></i></a></li>
+								<li class="envelope"><a href="mailto:kraakeluren@gmail.com" target="black"><i class="fa fa-envelope"></i></a></li>
 							</ul>
 					  </div>
 				   </div>

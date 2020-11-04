@@ -175,6 +175,8 @@ h1 {
 @media (max-width: 850px) {
   .row {
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
   }
 }
 
@@ -287,57 +289,84 @@ Problem: some columns unfortunately split up in the middle of verses, haven't fo
   }
 }
 
-form{
-  text-align:center;
+.formBox {
+  background-color: #f0f0f0;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
-input{
-  width:50%;
+.form {
+  text-align: center;
+  width: auto;
 }
 
-#kontakt{
-  position:relative;
-  top:50px;
+fieldset {
+  border: none;
+  margin: 0 auto;
 }
 
-@media (max-width:1200px) {
-  #map{
-    display: none;
-  }
+input {
+  width: 50%;
+  width: inherit;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+input[type=submit] {
+  padding: 15px 32px;
+  border: none;
+  border-radius: 5px;
+  width: 15%;
+  min-width: inherit;
+  background-color: #f0f0f0;
 }
 
 #map {
-  position:absolute;
-  padding:10px;
-  margin:35px;
-  left:750px;
-  top:125%;
-  width: 25%;
-  height:50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
 }
 
+.map {
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 #sosmed {
   margin: 35px;
   text-align: left;
 }
 
-#mazetxt{
-  position: relative;
-  top:65px;
+#mazetxt {
   margin: 35px;
-  text-align: right;
+  text-align: left;
 }
 
-.sosial{
-  border-style: solid;
-  width:32%;
+.sosial {
+  background-color: #f0f0f0;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  height: 430px;
+  min-width: 300px;
 }
 
 .sosial .fa {
   padding: 10px;
   width: 35px;
-  text-align:center;
+  text-align: center;
   text-decoration: none;
   border-radius: 75%;
 }
@@ -362,12 +391,16 @@ input{
   color: white;
 }
 
-.sosial ul{
-  list-style:none;
+.sosial ul {
+  list-style: none;
 }
 
 .braakImg {
   float: left;
   width: 50%;
   padding-right: 15px;
+}
+
+.box, .formBox, .sosial, .boardMemImg, .boxImgOnly {
+  box-shadow: 0 4px 8px 0 rgba(120,120,120,.2), 0 6px 20px 0 rgba(120,120,120,.2);
 }
