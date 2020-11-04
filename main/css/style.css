@@ -106,6 +106,7 @@ td {
   display: flex;
   flex-direction: row;
   position: relative;
+  height: auto;
 }
 
 .calendarDayBox {
