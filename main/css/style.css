@@ -61,7 +61,6 @@ td {
   margin: auto;
   width: 70%;
   min-width: 370px;
-  margin-top: 190px;
 }
 
 .column {
@@ -105,8 +104,12 @@ td {
   display: flex;
   flex-direction: row;
   position: relative;
-  overflow: hidden;
-  height: auto;
+  height: inherit;
+}
+
+.imgOnly {
+  width: 100%;
+  height: 100%;
 }
 
 .calendarDayBox {
@@ -164,14 +167,6 @@ td {
   height: auto;
   transform: translate(-50%, 0);
 }
-
-.imgOnly {
-  max-width: 100%;
-  min-width: 100%;
-  height: auto;
-}
-
-
 
 .boardMem {
   margin: 10px;
@@ -232,21 +227,27 @@ td {
   }
 }
 
-@media (min-width: 750) {
+@media (min-width: 1050px) {
   body.bigImg {
-    margin-top: 128px;
+    margin-top: 130px;
   }
   h1 {
     font-size: 300%;
   }
+  .container {
+    margin-top: 197px;
+  }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1050px) {
   body.bigImg {
     margin-top: 83px;
   }
   h1 {
     font-size: 265%;
+  }
+  .container {
+    margin-top: 150px;
   }
 }
 
@@ -476,16 +477,13 @@ input[type=submit], input[type=button] {
   padding-right: 15px;
 }
 
-.box, .formBox, .sosial, .boardMemImg, .boxImgOnly, .calendarDayBox, .calendarDateBox, .calendarDescription, .shopBox1, .shopBox2{
+.box, .formBox, .sosial, .boardMemImg, .boxImgOnly, .calendarDayBox, .calendarDateBox, .calendarDescription, .shopBox {
   box-shadow: 0 4px 8px 0 rgba(120,120,120,.2), 0 6px 20px 0 rgba(120,120,120,.2);
 }
-
-
 
 .wrapper {
   display: flex;
   width: 100%;
-  height: 300px;
   flex-wrap: wrap;
   height: 100%;
 }
@@ -496,18 +494,8 @@ input[type=submit], input[type=button] {
   flex-direction: column;
 }
 
-.shopBox1 {
+.shopBox {
   flex: 1;
-  background-color: #f0f0f0;
-  margin: 10px;
-  margin-bottom: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-}
-
-.shopBox2 {
-  flex: 2;
   background-color: #f0f0f0;
   margin: 10px;
   margin-bottom: 20px;
