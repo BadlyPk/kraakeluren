@@ -96,7 +96,7 @@ var events = [
 }
 ];
 
-//Sjekker om året er skuddår
+//Sjekker om året er skuddår, funnet her "https://www.geeksforgeeks.org/program-check-given-year-leap-year/"
 function isLeap(y){
   if(y % 400 === 0){
     return true;
@@ -225,7 +225,7 @@ function popUp(box){
   if (parseInt(d) < 10){    //Legger på 0 før dato mellom 1-9 -> eks: 05 for den femte
     t = "0";
   }
-  var t = t + d + "/" + dayEvent.mo + "-" + dayEvent.yr;    //Fullfører date
+  t = t + d + "/" + dayEvent.mo + "-" + dayEvent.yr;        //Fullfører date
   h.appendChild(document.createTextNode(t));                //legger til dato
   h.appendChild(document.createElement("BR"));              //Lineshift
   h.appendChild(document.createTextNode(dayEvent.event))    //Tittel
