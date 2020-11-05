@@ -22,77 +22,84 @@ var events = [
   mo: 9,
   da: 7,
   event: "Åpning av identitetsarealet for LUR",
-  description: ""
+  description: "Nå kommer en gladnyhet! Noen av dere har sikkert fulgt litt med på hva som skjer med LUR sitt identitetsareal den siste tiden.<br>Nå står rommet endelig klart og vi kan ta det i bruk fra i dag, mandag 7. september. Selv om rommet står klart er møblene der kun midlertidige. Likevel er rommet fint og brukbart."
 },
 {
   yr: 2020,
   mo: 9,
   da: 9,
   event: "Semesterets første Kråkeøving",
-  description: ""
+  description: "Lenge siden sist nu, men da var det endelig på tide med en lita øving. Øvingen blir hos Tore-Andre Øverby i garasjen. Ta derfor med noe ekstra tøy <3"
 },
 {
   yr: 2020,
   mo: 9,
   da: 11,
   event: "Spanskrørets opptakstur",
-  description: ""
+  description: "11-12 september skjer det årlige opptaket av førsteklassingene på Studenterhytta, som ligger oppe i Byåsen.<br>Det kommer til å bli en kjempekjekk tur der vi er sammen, spiser mat og blir bedre kjent! &#128079; (Etter opptaket så klart&#128521;)"
 },
 {
   yr: 2020,
   mo: 9,
   da: 17,
   event: "Semesterets andre Kråkeøving",
-  description: ""
+  description: "Da panker vi løs med ny øving. Vi pleier ikke å ha øvinger så ofte, men opptredenen på Imball må sitte.<br>Viktig at dere førstiser blir med, for det blir nemlig valgt årets Kråkeunge denne kvelden!!"
 },
 {
   yr: 2020,
   mo: 9,
   da: 19,
   event: "Spanskrørets immatrikuleringsball 2020",
-  description: ""
+  description: "Nå er det snart duket for årets immatrikuleringsball - for å hedre årets fadderbarn! Spanskrøret inviterer derfor alle nye og gamle LURinger til Thon Hotel Prinsen den 19.september. Ta på ditt fineste antrekk, spenn fast setebeltet, og gjør dere klar for en trivelig kveld med masse underholdning, god mat, enda bedre selskap og stemning!<br>Vi håper at du som ny student vil være med å feire deg og dine nye studievenner denne dagen, og at du som eldre student vil være med å feire de nye LURingene!"
 },
 {
   yr: 2020,
   mo: 9,
   da: 26,
-  event: "Kråkelurens Lavvotur 2020",
-  description: ""
+  event: "Kråkelurens Lavvotur og Polferd 2020",
+  description: "I tradisjon tro skal kråkene igjen rette nebb og vinger mot skogen i årets lavvotur og polferd. Så finn frem truger, gammasjer og refleksvester og bli med!"
 },
 {
   yr: 2020,
   mo: 10,
   da: 8,
   event: "Semesterets første kjellerøving",
-  description: ""
+  description: "Da er det klart for semesterets første øving på kjelleren. Detta må dere få med dere! Her selges det øl, blandevann og selvfølgelig drinkroulette!"
 },
 {
   yr: 2020,
   mo: 10,
   da: 11,
   event: "Spanskrøret idrett 10-års jubileum",
-  description: ""
+  description: "Spanskrøret idrett ble stiftet den 21.02.2010. Det er altså i overkant av ti år siden. Dette planlegger vi å feire med å arrangere et amazing race inspirert rebusløp søndag den 11.oktober. Sett sammen et lag på 4-6 personer og bli med. Oppgavene dere kommer til å støte på vil være inspirert av de ulike tilbudene vi i spanskrøret idrett har, og har tilbudt det siste ti-året."
 },
 {
   yr: 2020,
   mo: 10,
   da: 21,
   event: "Semesterets andre kjellerøving",
-  description: ""
+  description: "Da er det klart for semesterets 2. øving på kjelleren!! Håper så mange som mulig blir med!<br>På denne øvinga skal vi enten lage eller planlegge vårt innslag til xyz-faktor, så dette blir gøy :)"
 },
 {
   yr: 2020,
   mo: 10,
   da: 30,
   event: "XYZ-faktor 2020",
-  description: ""
+  description: "Det har vært rykter og det har vært snik-promotering, men nå er det endelig offisielt. Det blir XYZ-faktor i år også!<br>Tradisjon tro arrangerer NV-gangen det gløskjente arrangementet XYZ-faktor, NTNUs kuleste talent konkurranse. Med et navn kanskje noe inspirert av det litt mindre kjente X-faktor, arrangeres konkurransen annenhvert år for å finne ut av hvilken av foreningene som er den beste og mest talentfulle. På grunn av situasjonen vi er i blir det ikke et tradisjonelt show som det har vært før, men heller en nettbasert konkurranse!"
 },
 {
   yr: 2020,
   mo: 11,
   da: 7,
   event: "Julekos med Spanskrøret",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris arcu quam, aliquam non tortor et, pharetra placerat sem. Morbi posuere ultrices hendrerit. Aliquam felis massa, tincidunt in tortor quis, porttitor porta tellus. Mauris vel diam at dui semper vulputate. Curabitur consequat, lectus quis dictum laoreet, nulla arcu ultricies sapien, euismod."
+  description: "Vi nærmer oss eksamensperioden og snart er juleferien her, og da kan vi jo tillate oss å tjuvstarte litt på julestemningen sammen! Arrkom inviterer i år til julekos på Ranheim.<br>Julekosen erstatter årets julebord, av hensyn til smittevern. Det vil bli servert risgrøt, saft og pepperkaker - og det vil være quiz, underholdning og andre gøyale ting. Ta på deg det antrekket som får DEG i riktig julestemning og kom!"
+},
+{
+  yr: 2020,
+  mo: 11,
+  da: 17,
+  event: "Generalforsamling 2020 for Spanskrøret",
+  description: "Tirsdag 17. november er det tid for generalforsamling! Det vil blant annet bli valg av nytt styre i tillegg til at forslag til vedtektsendringer vil bli lagt fram og stemt over."
 }
 ];
 
