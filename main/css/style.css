@@ -228,16 +228,16 @@ td {
   }
 }
 
-@media (min-width: 750) {
+@media (min-width: 1050px) {
   body.bigImg {
-    margin-top: 128px;
+    margin-top: 90px;
   }
   h1 {
     font-size: 300%;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1050px) {
   body.bigImg {
     margin-top: 83px;
   }
