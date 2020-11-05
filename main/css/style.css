@@ -74,6 +74,15 @@ td {
   flex-direction: column;
 }
 
+.expand {
+  width: 90%;
+}
+
+@media (max-width: 850px) {
+  .expand {
+    width: 900px;
+  }
+}
 
 /* Column inside boxes */
 
