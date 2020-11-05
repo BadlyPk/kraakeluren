@@ -139,8 +139,7 @@ td {
 
 .arrow {
   cursor: pointer;
-  margin: 0 10px 0 10px;
-  margin-block-start: 1.33em;
+  margin: 1.33em 10px 0 10px;
 }
 
 .cross {
