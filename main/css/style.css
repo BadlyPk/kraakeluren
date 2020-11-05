@@ -228,6 +228,7 @@ td {
   flex-direction: column;
   margin: 0 auto;
   height: 470px;
+  min-height: 100%;
 }
 
 .boardText {
