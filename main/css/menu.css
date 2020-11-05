@@ -38,12 +38,6 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1050px) {
-  #Logo {
-	  display: none;
-  }
-}
-
 #Logo {
   position:absolute;
   top:3px;
