@@ -61,7 +61,6 @@ td {
   margin: auto;
   width: 70%;
   min-width: 370px;
-  margin-top: 190px;
 }
 
 .column {
@@ -235,6 +234,9 @@ td {
   h1 {
     font-size: 300%;
   }
+  .container {
+    margin-top: 197px;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -243,6 +245,9 @@ td {
   }
   h1 {
     font-size: 265%;
+  }
+  .container {
+    margin-top: 150px;
   }
 }
 
