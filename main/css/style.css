@@ -105,6 +105,7 @@ td {
   display: flex;
   flex-direction: row;
   position: relative;
+  overflow: hidden;
   height: auto;
 }
 
@@ -167,6 +168,7 @@ td {
 .imgOnly {
   max-width: 100%;
   min-width: 100%;
+  height: auto;
 }
 
 
