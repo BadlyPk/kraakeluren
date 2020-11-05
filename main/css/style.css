@@ -105,8 +105,12 @@ td {
   display: flex;
   flex-direction: row;
   position: relative;
-  overflow: hidden;
-  height: auto;
+  height: inherit;
+}
+
+.imgOnly {
+  width: 100%;
+  height: 100%;
 }
 
 .calendarDayBox {
@@ -164,14 +168,6 @@ td {
   height: auto;
   transform: translate(-50%, 0);
 }
-
-.imgOnly {
-  max-width: 100%;
-  min-width: 100%;
-  height: auto;
-}
-
-
 
 .boardMem {
   margin: 10px;
