@@ -65,6 +65,16 @@ td {
   margin-top: 190px;
 }
 
+.expand {
+  width: 90%
+}
+
+@media (max-width: 850px) {
+  .expand{
+    width: 900px;
+  }
+}
+
 .column {
   flex: 50%;
   flex-direction: column;
@@ -155,14 +165,26 @@ td {
   height: 100%;
 }
 
+@media (max-width: 850px) {
+  #screenCover{
+    position: absolute;
+  }
+}
+
 .calendarDescription {
   background-color: #f0f0f0;
-  position: fixed;
+  position: relative;
   left: 50%;
   top: 30%;
   width: 50%;
   height: auto;
   transform: translate(-50%, 0);
+}
+
+@media (max-width: 850px) {
+  .calendarDescription {
+    width: 70%;
+  }
 }
 
 .imgOnly {
