@@ -32,7 +32,6 @@ td {
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 130px;
 }
 
 .overlay {
@@ -62,7 +61,6 @@ td {
   margin: auto;
   width: 70%;
   min-width: 370px;
-  margin-top: 190px;
 }
 
 .expand {
@@ -116,7 +114,12 @@ td {
   display: flex;
   flex-direction: row;
   position: relative;
-  height: auto;
+  height: inherit;
+}
+
+.imgOnly {
+  width: 100%;
+  height: 100%;
 }
 
 .calendarDayBox {
@@ -192,8 +195,6 @@ td {
   min-width: 100%;
 }
 
-
-
 .boardMem {
   margin: 10px;
   margin-bottom: 20px;
@@ -245,11 +246,51 @@ td {
 }
 
 
+/* When the screen width is less than 850px, the different columns in gallery, about_styret, blog, contact and shop will become one row instead of 2 or 3 */
+
 @media (max-width: 850px) {
   .row {
     flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
+  }
+}
+
+/* These decide what happens when the navbar changes height by smaller width screen; the large full-width images will not have a margin from the navbar, the font size of headers is decreased for smaller screens to not go outside of the width of the page, smaller margin from the top for the container to avoid too much whitespace on smaller screens. */
+
+@media (min-width: 1200px) {
+  body.bigImg {
+    margin-top: 130px;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  .container {
+    margin-top: 207px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1200px) {
+  body.bigImg {
+    margin-top: 90px;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  .container {
+    margin-top: 157px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body.bigImg {
+    margin-top: 83px;
+  }
+  h1 {
+    font-size: 265%;
+  }
+  .container {
+    margin-top: 150px;
   }
 }
 
@@ -479,16 +520,13 @@ input[type=submit], input[type=button] {
   padding-right: 15px;
 }
 
-.box, .formBox, .sosial, .boardMemImg, .boxImgOnly, .calendarDayBox, .calendarDateBox, .calendarDescription, .shopBox1, .shopBox2{
+.box, .formBox, .sosial, .boardMemImg, .boxImgOnly, .calendarDayBox, .calendarDateBox, .calendarDescription, .shopBox {
   box-shadow: 0 4px 8px 0 rgba(120,120,120,.2), 0 6px 20px 0 rgba(120,120,120,.2);
 }
-
-
 
 .wrapper {
   display: flex;
   width: 100%;
-  height: 300px;
   flex-wrap: wrap;
   height: 100%;
 }
@@ -499,18 +537,8 @@ input[type=submit], input[type=button] {
   flex-direction: column;
 }
 
-.shopBox1 {
+.shopBox {
   flex: 1;
-  background-color: #f0f0f0;
-  margin: 10px;
-  margin-bottom: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: row;
-}
-
-.shopBox2 {
-  flex: 2;
   background-color: #f0f0f0;
   margin: 10px;
   margin-bottom: 20px;
