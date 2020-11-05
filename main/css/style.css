@@ -219,6 +219,8 @@ td {
 }
 
 
+/* When the screen width is less than 850px, the different columns in gallery, about_styret, blog, contact and shop will become one row instead of 2 or 3 */
+
 @media (max-width: 850px) {
   .row {
     flex-direction: column;
@@ -227,7 +229,9 @@ td {
   }
 }
 
-@media (min-width: 1050px) {
+/* These decide what happens when the navbar changes height by smaller width screen; the large full-width images will not have a margin from the navbar, the font size of headers is decreased for smaller screens to not go outside of the width of the page, smaller margin from the top for the container to avoid too much whitespace on smaller screens. */
+
+@media (min-width: 1200px) {
   body.bigImg {
     margin-top: 130px;
   }
@@ -235,7 +239,19 @@ td {
     font-size: 300%;
   }
   .container {
-    margin-top: 197px;
+    margin-top: 207px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1200px) {
+  body.bigImg {
+    margin-top: 90px;
+  }
+  h1 {
+    font-size: 300%;
+  }
+  .container {
+    margin-top: 157px;
   }
 }
 
