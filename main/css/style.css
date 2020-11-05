@@ -32,7 +32,6 @@ td {
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 130px;
 }
 
 .overlay {
@@ -228,6 +227,24 @@ td {
     flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
+  }
+}
+
+@media (min-width: 750) {
+  body.bigImg {
+    margin-top: 128px;
+  }
+  h1 {
+    font-size: 300%;
+  }
+}
+
+@media (max-width: 750px) {
+  body.bigImg {
+    margin-top: 84px;
+  }
+  h1 {
+    font-size: 265%;
   }
 }
 
