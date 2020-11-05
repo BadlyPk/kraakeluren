@@ -38,7 +38,7 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 750px) {
+@media screen and (max-width: 1200px) and (min-width: 1050px) {
   #Logo {
 	  display: none;
   }
@@ -72,7 +72,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1050px) {
   .navbar-right a, .dropdown .dropbtn {
     display: none;
   }
@@ -86,7 +86,7 @@ body {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1050px) {
   .navbar-right.responsive {
 	  position: relative;
   }
